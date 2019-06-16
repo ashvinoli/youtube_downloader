@@ -19,4 +19,4 @@ python youtube.py
 ```
 The program continuously(at 1 sec interval to be precise) checks the clipboard for change and if the contents in the clipboard is youtube video url, then the process begins and within 30-40 secs idm will get the link and a idm dialog box will pop up. If the link is playlist it might take 2-3 minutes before idm gets all the links. 
 
-Just copy the youtube vido url and the download should begin. Feel free to change the code and make it your own.
+Just copy the youtube video url and the download should begin. Feel free to change the code and make it your own.
