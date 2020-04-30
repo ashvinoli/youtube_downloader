@@ -8,10 +8,10 @@ def loop():
     prev_text = ""
     while (1):
         new_text = pc.paste()
-        print(new_text)
         if prev_text != new_text:
             if new_text.find("https://www.youtube.com") >= 0:
-                print("Now I will work")
+                print(new_text)
+                print("The download will now start. Keep patience. IDM window will pop up soon.")
                 all_links, all_names,length = get_all_links_and_names(new_text)
                 for i in range(length):
                     call_idm(all_links[i],all_names[i])
@@ -32,7 +32,7 @@ def loop():
     
 def call_idm(video_url,name):
     my_str = "idman "+  "/f " +  "\"" + name + "\" " + "/d " + "\""+ video_url +  "\""
-    print(my_str)
+    #print(my_str)
     os.system(my_str)
 
 def split_them(strings):
